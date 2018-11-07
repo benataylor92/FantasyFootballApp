@@ -1,0 +1,75 @@
+﻿<div>
+    <h1>My Fantasy Football App Baby
+    </h1>
+    <table id="FootballTable" class="tablesorter">
+        <thead>
+            <tr>
+                <th onclick="sortdata(1)">First Name</th>
+                <th>Second Name</th>
+                <th onclick="sortdata(3)">Points Per Game</th>
+                <th onclick="sortdata(4)">Minutes</th>
+                <th onclick="sortdata(5)">MostEfficient</th>
+                <th onclick="sortdata(6)">CostNow</th>
+            </tr>
+        </thead>
+        <tbody class="result">
+        </tbody>
+    </table>
+</div>
+@section Scripts{
+    <script type="text/javascript">
+        var playersData = null;
+        var direction = 1;
+        $(document).ready(function () {
+            $.get("api/football", function (data) {
+                //$(".result").html(data);
+                //alert(data);
+                playersData = data;
+                drawTable();
+            });
+        });
+        function sortdata(column) {
+            console.log(playersData);
+            if (column == 1) { playersData.sort(function (a, b) {
+                    return (a.first_name < b.first_name) ? -1 * direction : 1 * direction;
+                });
+            }
+            else if (column == 3) {
+                playersData.sort(function (a, b) {
+                    return (a.points_per_game < b.points_per_game) ? -1 * direction : 1 * direction;
+                });
+            }
+            else if (column == 4) {
+                playersData.sort(function (a, b) {
+                    return (a.minutes < b.minutes) ? -1 * direction : 1 * direction;
+                });
+            }
+            else if (column == 5){
+                playersData.sort(function (a, b) {
+                    return (a.mostEfficient < b.mostEfficient) ? -1 * direction : 1 * direction;
+                });
+            }
+            else {
+                playersData.sort(function (a, b) {
+                    return (a.now_cost < b.now_cost) ? -1 * direction : 1 * direction;
+                });
+            }
+            direction = direction * -1;
+            drawTable();
+        }
+        function drawTable() {
+            var allPlayers = "";
+            playersData.forEach(function (Footballer) {
+                console.log(Footballer);
+
+                allPlayers += "<tr><td>" + Footballer.first_name + "</td>";
+                allPlayers += "<td>" + Footballer.second_name + "</td>";
+                allPlayers += "<td>" + Footballer.points_per_game + "</td>";
+                allPlayers += "<td>" + Footballer.minutes + "</td>";
+                allPlayers += "<td>" + Footballer.mostEfficient + "</td>"
+                allPlayers += "<td>" + Footballer.now_cost + "</td></tr>"
+            });
+            $(".result").html(allPlayers);
+        }       
+   </script>
+}

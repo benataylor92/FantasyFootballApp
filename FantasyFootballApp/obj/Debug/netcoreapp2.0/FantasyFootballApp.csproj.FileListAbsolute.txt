@@ -1,0 +1,11 @@
+C:\Users\taylorbx\Documents\Visual Studio 2017\Projects\FantasyFootballApp\FantasyFootballApp\bin\Debug\netcoreapp2.0\FantasyFootballApp.deps.json
+C:\Users\taylorbx\Documents\Visual Studio 2017\Projects\FantasyFootballApp\FantasyFootballApp\bin\Debug\netcoreapp2.0\FantasyFootballApp.runtimeconfig.json
+C:\Users\taylorbx\Documents\Visual Studio 2017\Projects\FantasyFootballApp\FantasyFootballApp\bin\Debug\netcoreapp2.0\FantasyFootballApp.runtimeconfig.dev.json
+C:\Users\taylorbx\Documents\Visual Studio 2017\Projects\FantasyFootballApp\FantasyFootballApp\bin\Debug\netcoreapp2.0\FantasyFootballApp.dll
+C:\Users\taylorbx\Documents\Visual Studio 2017\Projects\FantasyFootballApp\FantasyFootballApp\bin\Debug\netcoreapp2.0\FantasyFootballApp.pdb
+C:\Users\taylorbx\Documents\Visual Studio 2017\Projects\FantasyFootballApp\FantasyFootballApp\obj\Debug\netcoreapp2.0\FantasyFootballApp.csprojResolveAssemblyReference.cache
+C:\Users\taylorbx\Documents\Visual Studio 2017\Projects\FantasyFootballApp\FantasyFootballApp\obj\Debug\netcoreapp2.0\FantasyFootballApp.csproj.CoreCompileInputs.cache
+C:\Users\taylorbx\Documents\Visual Studio 2017\Projects\FantasyFootballApp\FantasyFootballApp\obj\Debug\netcoreapp2.0\FantasyFootballApp.AssemblyInfoInputs.cache
+C:\Users\taylorbx\Documents\Visual Studio 2017\Projects\FantasyFootballApp\FantasyFootballApp\obj\Debug\netcoreapp2.0\FantasyFootballApp.AssemblyInfo.cs
+C:\Users\taylorbx\Documents\Visual Studio 2017\Projects\FantasyFootballApp\FantasyFootballApp\obj\Debug\netcoreapp2.0\FantasyFootballApp.dll
+C:\Users\taylorbx\Documents\Visual Studio 2017\Projects\FantasyFootballApp\FantasyFootballApp\obj\Debug\netcoreapp2.0\FantasyFootballApp.pdb
