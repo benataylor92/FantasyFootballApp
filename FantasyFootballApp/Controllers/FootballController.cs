@@ -18,7 +18,7 @@ namespace FantasyFootballApp.Controllers
         public async Task<IActionResult> Index()
         {
             HttpClient footballClient = new HttpClient();
-            var result = await footballClient.GetAsync("https://fantasy.premierleague.com/drf/bootstrap-static");
+            var result = await footballClient.GetAsync("https://fantasy.premierleague.com/api/bootstrap-static/");
             var json = await result.Content.ReadAsStringAsync();
             JObject jsonTree = JObject.Parse(json);
             var footballerJson = jsonTree["elements"].ToString();
